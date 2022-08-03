@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,24 @@
     <title>信息小卡片</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript"></script>
+   
 </head>
+
 <body>
+   
     <div class="card-container">
+
+        <div class="music">
+            <audio autoplay="autoplay" 
+                    controls="controls" 
+                    loop="loop" 
+                    preload="auto" 
+                    src="bgm.mp3">
+            </audio>    
+        </div>
+
         <div class="card-banner">
-            第一个测试小项目1.1——
+            测试小项目1.1——
             <div class="programName">
                 信息卡片
             </div>
@@ -19,6 +33,7 @@
                 window.alert("请根据提示输入相关信息！")
             </script>
         </div>
+        
         <div class="card-info">
             <div class="perfile">
                 <img src="ToonMe.jpg" alt="">
@@ -60,8 +75,8 @@
                 </div>
                 <div class="answer">
                     <script>
-                    var myStudy=prompt('您的学历：');
-                    document.write(myStudy);
+                        var myStudy=prompt('您的学历：');
+                        document.write(myStudy);
                     </script>
                 </div>
             </div>
@@ -79,4 +94,5 @@
         </div>
     </div>
 </body>
+
 </html>

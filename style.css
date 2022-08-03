@@ -11,6 +11,15 @@ body{
     margin: 0;
 }
 
+.music{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 400px;
+    height: 54.5px;
+    background-color:rgb(255, 68, 0);
+    background-size: contain;
+}
 .card-container{
     width: 400px;
     height: 400px;
@@ -75,8 +84,8 @@ img{
     flex-direction: column;
 }
 
-.answer{
-    font-size: small;
+.type{
+    font-size: x-small;
 }
 
 .name{
@@ -94,6 +103,12 @@ img{
     100% {
     background-position: -100% 0;
     }
+}
+.age{
+    font-size: small;
+}
+.location{
+    font-size: small;
 }
 
 .category{
