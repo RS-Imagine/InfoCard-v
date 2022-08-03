@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(193, 231, 232);
+    /*左右居中*/
+    justify-content: center;
+    /*上下居中*/
+    align-items: center;
+    /*弹性布局*/
+    display: flex;
+    /*100%的窗口高度*/
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container{
+    width: 400px;
+    height: 400px;
+    background-color:beige;
+    /*弹性布局*/
+    display: flex;
+    /**/
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-banner{
+    background-color: coral;
+    flex: 0.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.programName{
+    background-image: -webkit-linear-gradient(left, #d9e900, #cc00ff 25%, #d9e900 50%, #cc00ff 75%, #d9e900);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation:  maskedAnimation 1.6s infinite linear;
+    font-size: auto;
+}
+@keyframes maskedAnimation{
+    1% {
+    background-position: 0 0;
+    }
+    100% {
+    background-position: -100% 0;
+    }
+}
+
+.card-info{
+    flex: 2.5;
+    border-bottom: 1px solid red;
+    /*弹性布局*/
+    display: flex;
+    /* */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 150px;
+    border-radius: 20%;
+}
+
+.card-stats{
+    flex: 1;
+    display: flex;
+}
+.category{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.answer{
+    font-size: small;
+}
+
+.name{
+    background-image: -webkit-linear-gradient(left, #4035b9, #d4d439 25%, #1d1f94 50%, #f3e00f 75%, #2e07a3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation:  maskedAnimation 1.2s infinite linear;
+    font-size: auto;
+}
+@keyframes maskedAnimation{
+    1% {
+    background-position: 0 0;
+    }
+    100% {
+    background-position: -100% 0;
+    }
+}
+
+.category{
+    margin: 20px;
+	width: 200px;
+	background: linear-gradient(180deg, red, rgb(8, 0, 255));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	/* 以区块内的文字作为裁剪区域向外裁剪，
+    文字的背景即为区块的背景，文字之外的区域都将被裁剪掉 */
+}
