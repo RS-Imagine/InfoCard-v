@@ -8,11 +8,20 @@
     <title>信息小卡片</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript"></script>
-   
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        </script>
 </head>
 
 <body>
-   
     <div class="card-container">
 
         <div class="music">
@@ -29,9 +38,6 @@
             <div class="programName">
                 信息卡片
             </div>
-            <script>
-                window.alert("请根据提示输入相关信息！")
-            </script>
         </div>
         
         <div class="card-info">
@@ -39,21 +45,21 @@
                 <img src="ToonMe.jpg" alt="">
             </div>
             <div class="name">
-                <script>
-                    var myName=prompt('您的姓名：');
-                    document.write(myName);
+                <script>      
+                    var sn = getParameterByName('myName');
+                    document.write(sn);
                 </script>
             </div>
             <div class="age">
                 <script>
-                    var mySex=prompt('您的性别：');
-                        document.write(mySex);
+                    var sn = getParameterByName('mySex');
+                    document.write(sn);
                 </script>
             </div>
             <div class="location">
                 <script>
-                    var myLocation=prompt('您的居住地：');
-                    document.write(myLocation);
+                    var sn = getParameterByName('myLocation');
+                    document.write(sn);
                 </script>
             </div>
         </div>
@@ -64,8 +70,8 @@
                 </div>
                 <div class="answer">
                     <script>
-                        var mySchool=prompt('您的院校：');
-                        document.write(mySchool);
+                        var sn = getParameterByName('mySchool');
+                        document.write(sn);
                     </script>
                 </div>
             </div>
@@ -75,8 +81,8 @@
                 </div>
                 <div class="answer">
                     <script>
-                        var myStudy=prompt('您的学历：');
-                        document.write(myStudy);
+                        var sn = getParameterByName('myStudy');
+                        document.write(sn);
                     </script>
                 </div>
             </div>
@@ -86,8 +92,8 @@
                 </div>
                 <div class="answer">
                     <script>
-                        var myInteresrs=prompt('您的兴趣爱好：');
-                        document.write(myInteresrs);
+                        var sn = getParameterByName('myInterest');
+                        document.write(sn);
                     </script>
                 </div>
             </div>
